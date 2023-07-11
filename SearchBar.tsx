@@ -39,25 +39,37 @@ const SearchBar = () => {
   };
 
   return (
-    <div>
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={handleInputChange}
-        placeholder="Search..."
-      />
-      <ul>
-        {suggestions.map((option) => (
-          <li key={option.id} onClick={() => handleOptionSelect(option)}>
-            {option.name}
-          </li>
-        ))}
-      </ul>
-      <div>
+    <div className="search-bar-container">
+      <div className="search-bar">
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={handleInputChange}
+          placeholder="Search..."
+          className="search-input"
+        />
+        <ul className="suggestions">
+          {suggestions.map((option) => (
+            <li
+              key={option.id}
+              onClick={() => handleOptionSelect(option)}
+              className="suggestion"
+            >
+              {option.name}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="selected-options">
         {selectedOptions.map((option) => (
-          <span key={option.id}>
+          <span key={option.id} className="selected-option">
             {option.name}
-            <button onClick={() => handleOptionRemove(option)}>X</button>
+            <button
+              onClick={() => handleOptionRemove(option)}
+              className="remove-button"
+            >
+              X
+            </button>
           </span>
         ))}
       </div>
