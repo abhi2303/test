@@ -373,3 +373,12 @@ The deploy stage in the CI pipeline will apply the Kubernetes configuration file
 With these steps, your CI/CD pipeline is set up to build, push, and deploy your confi-gatekeeping-service Spring Boot application to Kubernetes. The application will be accessible only within the cluster.
 
 If you have any questions or need further assistance, feel free to ask! Happy deploying!
+
+
+
+
+Akshita is excellent at driving projects from start to finish.
+She successfully handled the Reports Base project, performing a spring upgrade and modularizing sub-projects for independent deployment.
+Diligent in handling Tech Risk items, even though they didn't offer much technical learning.
+A great team player, always ready to assist others and mentored junior colleague Udit (NAPA).
+Encouraging her to take on more tasks with new tech stacks to enhance her expertise and become a valuable SME in the team.
